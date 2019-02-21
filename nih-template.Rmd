@@ -1,0 +1,37 @@
+---
+title: "NIH template"
+author: "Matthew Loop"
+date: "`r Sys.Date()`"
+output: 
+  word_document:
+    reference_docx: nih-template.docx
+---
+
+stuff indeed
+
+# Heading 1
+some text
+
+## Heading 2
+
+```{r}
+library(tidyverse)
+
+tribble(
+  ~x, ~y,
+  "a", 1,
+  "b", 2
+) %>%
+  knitr::kable(caption = "A caption")
+```
+
+Some body text.
+
+1. item 1
+2. item 2
+
+More text.
+
+* bullet 1
+* bullet 2
+
